@@ -20,6 +20,9 @@ export class PropertyDetailService {
    return this.http.put(`${this.baseUrl}/${this.formData.id}`,this.formData);
   }
 
+  postPropertyDetail(){
+    return this.http.post(this.baseUrl,this.formData);
+  }
   refreshList(){
     this.http.get<PropertyResponse>(this.baseUrl).toPromise().
     then(
