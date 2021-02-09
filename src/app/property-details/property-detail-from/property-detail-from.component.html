@@ -22,9 +22,11 @@
         #MontlyRent="ngModel" [(ngModel)]="service.formData.montlyRent"minlength="0" required [class.invalid]="MontlyRent.invalid && MontlyRent.touched">
     </div>
     <br>
-     <div class="form-group">
-        <button type="submit"class="btn btn-outline-info btn-lg btn-block" [disabled]="detailForm.invalid">
+    <div class="form-group">
+
+        <button type="submit" class="btn form-control btn-outline-info btn-lg btn-block" [disabled]="detailForm.invalid">
                 Submit
         </button>
-    </div> 
+    </div>
+
 </form>
